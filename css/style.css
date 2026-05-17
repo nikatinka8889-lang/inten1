@@ -172,7 +172,7 @@ body {
 }
 
 .select-sinema {
-    cursor: pointer;
+  cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 5px;
   width: 470px;
@@ -183,24 +183,113 @@ body {
 }
 
 .option {
-      background-color: rgba(255, 255, 255, 0.15);
-      color: white;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
 }
-
 
 .select-time {
-width: 108px;
-height: 60px;
-border: 1px solid rgba(255, 255, 255, 0.5);
-border-radius: 5px;
-width: 108px;
-height: 60px;
-background: rgba(255, 255, 255, 0.15);
-color: white;
-padding: 10px;
+  width: 108px;
+  height: 60px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  width: 108px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  padding: 10px;
+}
+
+.select-sinema,
+.select-time {
+  margin-top: 20px;
+}
+
+.scheme {
+  margin-top: 63px;
+  background: rgba(36, 36, 36, 0.18);
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.scheme path:not(.light) {
+  fill: rgba(255, 255, 255, 0.2);
+  &:hover{
+    cursor: pointer ;
+      fill: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.scheme path.booked{
+    fill: rgba(255, 255, 255, 0.05);
+    cursor: not-allowed;
+    &:hover{
+          fill: rgba(255, 255, 255, 0.05);
+    cursor: not-allowed;
+    }
+}
+
+.legeng {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  padding-top: 22px;
+  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+  max-width: 1024px;
 }
 
 
-.select-sinema, .select-time {
-    margin-top: 20px;
+.legent-label {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  color: rgba(255, 255, 255, 0.5)
+}
+
+.scheme path.active{
+    fill :#FE8E05;
+    cursor: pointer;
+    &:hover{
+          fill:#FE8E05;
+    cursor: pointer;
+    }
+}
+
+.legend-active {
+  color: #FE8E05;
+}
+
+.legeng svg {
+  margin-right: 15px;
+}
+
+.price {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-label{
+  display: block;
+  font-weight: 400;
+font-size: 18px;
+margin-bottom: 12px;
+}
+
+.price-tag:not(.price-label){
+  font-weight: 400;
+font-size: 52px;
+}
+
+.button {
+  display: block;
+  border-radius: 5px;
+padding: 24px 52px;
+background: #fe8e05;
+color: #fff;
+text-align: center;
+font-weight: 700;
+font-size: 18px;
+text-decoration: none;
 }
